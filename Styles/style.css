@@ -114,7 +114,7 @@ margin-bottom: 130px;
 }
 /* skills-container*/
 .skills-container{
-    display: flex;
+    /* display: flex; */
     gap: 24px;
 }
 .skill{
@@ -159,4 +159,21 @@ footer input[type="text"],footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+  .skills-container, .resume-container,footer, .about{
+    flex-direction: column;
+  }
+  footer, .about{
+    padding: 20px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  footer input[type="text"],footer input[type="email"], footer textarea{
+    width: calc(100% - 40px);
+  }
 }
